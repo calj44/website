@@ -1,4 +1,0 @@
-<!Doctype css>
-header {background-color: grey; font-color: darkgreen; font: arial,sans-serif;
-    border: medium-solid; border-color darkgreen
-}
