@@ -1,4 +1,3 @@
-<!Doctype css>
-header {background-color: grey; font-color: darkgreen; font: arial,sans-serif;
-    border: medium-solid; border-color darkgreen
+header {background-color: grey; color: darkgreen; font-family: arial,sans-serif;
+    border: medium-solid; border-color 
 }
