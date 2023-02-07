@@ -1,2 +1,8 @@
-header {background-color: grey; color: darkgreen; font-family: "arial","sans-serif";
-    border:solid; border-color: darkgreen}
+header {background-color: mintcream; color: navy; font-family: "arial","sans-serif";
+    border:solid; border-color: navy}
+nav {background-color:navy}
+nav p{border:medium solid; border-color:mintcream; background-color: navy; font-weight: bold; color: mintcream; display:inline-block; width: 17%; min-width: 85px; text-align:center; margin-left: 3px}
+main {background-color: mintcream; }
+main h{font: Arial, "sans-serif"}
+main h2{text-align: center}
+footer {background-color: navy; color: mintcream}
