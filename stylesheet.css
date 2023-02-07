@@ -2,6 +2,7 @@ header {background-color: mintcream; color: navy; font-family: "arial","sans-ser
     border:solid; border-color: navy}
 nav {background-color:navy}
 nav p{border:medium solid; border-color:mintcream; background-color: navy; font-weight: bold; color: mintcream; display:inline-block; width: 17%; min-width: 85px; text-align:center; margin-left: 3px}
+nav a{color: mintcream}
 main {background-color: mintcream; }
 main h{font: Arial, "sans-serif"}
 main h2{text-align: center}
