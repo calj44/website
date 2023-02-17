@@ -28,8 +28,8 @@
 		<hr>
 		<section class="people">
 		<h2>Our People</h2>
- <button onclick="myFunction()">Click me</button>
-     <button onclick="myFunction2()">Click me2</button>
+ <button onclick="myFunction()">Carlos Lourenco</button>
+     <button onclick="myFunction2()">Darren Booth</button>
 			<h3 id="whatever"></h3>
 			<img id="imagepeople">
 			<p id="people"></p>
@@ -52,10 +52,12 @@
 
 	document.getElementById("whatever").innerHTML = "Carlos Lourenco Jr: Founder and CEO.";
   document.getElementById("people").innerHTML = "Carlos Lourenco Jr is a computer science major at Rhode Island College and in his free time founded the company Calj Studios. He is also the lead storyboard writer and developer on most projects that take place at project studios. The studio itself started as a one man project back in 2019 when Carlos made imagination come to life with the development of Eternal Flames that started our studios and allowed it to expand to the size we are today.";
+	img.setAttribute('founder.png','imagepeople')
 }
 	function myFunction2() {
 		document.getElementById("whatever").innerHTML = "Darren Booth: Executive Vice President";
   document.getElementById("people").innerHTML = "Darren Booth is the Executive Vice president of Calj Studios and manages much of the financials. Darren has been a member of Calj Studios since 2020 after being an avid Eternal Flames player. It is with this passion as a player that Darren has helped Calj Studios reach new markets and taken on challenges never before though posible";
+		img.setAttribute('vp.jpg','imagepeople')
 }
 </script>
 
