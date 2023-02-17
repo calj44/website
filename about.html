@@ -28,18 +28,20 @@
 		<hr>
 		<section class="people">
 		<h2>Our People</h2>
-			<button id="callclj" onClick="callceo()">Carlos Lourenco</button>
+			<button onClick="callceo()">Carlos Lourenco</button>
 			<button onClick="callevp()">Darren Booth</button>
 			<h3 id="whatever"></h3>
-			<img id="image" alt="placeholder">
-			<p></p>
-			<!-- 
+			<img id="imagepeople" alt="placeholder">
+			<p id="peoplep"></p>
+		<!--
 			<img src="founder.png" alt="Image of Founder" width="200" height="200">
 			<h3 id="clj"> Carlos Lourenco Jr: Founder and CEO</h3>
-			<p id="cljp">Carlos Lourenco Jr is a computer science major at Rhode Island College and in his free time founded the company Calj Studios. He is also the lead storyboard writer and developer on most projects that take place at project studios. The studio itself started as a one man project back in 2019 when Carlos made imagination come to life with the development of Eternal Flames that started our studios and allowed it to expand to the size we are today.</p>
+			<p id="cljp">Carlos Lourenco Jr is a computer science major at Rhode Island College and in his free time founded the company Calj Studios. He is also the lead storyboard writer and developer on most projects that take place at project studios. The studio itself started as a one man project back in 2019 when Carlos made imagination come to life with the development of Eternal Flames that started our studios and allowed it to expand to the size we are today.</p> -->
+			<!--
 			<img src="vp.jpg" alt="Image of Vice President" width="200" height="200">
 			<h3 id="db">Darren Booth: Executive Vice President</h3>
-			<p id="dbp">Darren Booth is the Executive Vice president of Calj Studios and manages much of the financials. Darren has been a member of Calj Studios since 2020 after being an avid Eternal Flames player. It is with this passion as a player that Darren has helped Calj Studios reach new markets and taken on challenges never before though posible.</p> -->
+			<p id="dbp">Darren Booth is the Executive Vice president of Calj Studios and manages much of the financials. Darren has been a member of Calj Studios since 2020 after being an avid Eternal Flames player. It is with this passion as a player that Darren has helped Calj Studios reach new markets and taken on challenges never before though posible.</p>  -->
+			
 		</section>
 <h3> This is our About us Page</h3> 
 <p>Click here to return back to the : <a href="index.html">Home page</a></p>
@@ -48,10 +50,16 @@
 		<p>Footer Content Coming soon</p>
 	</footer>
 	<script>
-		var 
-	function callceo() {
-		let text = document.getElementById("callclj").innerText;
-		document.getElementById("clj")
+		Window.onload = function {
+function callceo() {
+  document.getElementById('whatever').innerText = "Carlos Lourenco Jr: Founder and CEO";
+	document.getElementById('peoplep').innerText = "Carlos Lourenco Jr is a computer science major at Rhode Island College and in his free time founded the company Calj Studios. He is also the lead storyboard writer and developer on most projects that take place at project studios. The studio itself started as a one man project back in 2019 when Carlos made imagination come to life with the development of Eternal Flames that started our studios and allowed it to expand to the size we are today.";
+	img.setAttribute('imagepeople','founder.png');
+	function callevp() {
+  document.getElementById('whatever').innerText = "Darren Booth: Executive Vice President";
+	document.getElementById('peoplep').innerText = "Darren Booth is the Executive Vice president of Calj Studios and manages much of the financials. Darren has been a member of Calj Studios since 2020 after being an avid Eternal Flames player. It is with this passion as a player that Darren has helped Calj Studios reach new markets and taken on challenges never before though posible.";
+	img.setAttribute('imagepeople','vp.jpg');
+}
 	}
 		
 		
