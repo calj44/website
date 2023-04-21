@@ -70,10 +70,73 @@
 			</table>
 		
 		</ul>
+		<button onclick="findAirline()">Find an airline</button>
+<button onclick="addAirline()">Add an airline</button>
+<button onclick="removeAirline()">Remove an airline</button>
 	</main>
 	<footer>
 		<p>Site copyright © 2023 by Carlos Lourenco.</p>
 	</footer>
+	<script>
+let airlines = ["Delta", "United", "American", "Southwest", "JetBlue", "Alaska"];
 
+function findAirline() {
+  let airlineNumber;
+  
+  do {
+    airlineNumber = prompt("Enter airline number (1-6):");
+    
+    if (airlineNumber === null) {
+      return; // User clicked cancel
+    }
+    
+    airlineNumber = parseInt(airlineNumber);
+    
+    if (isNaN(airlineNumber) || airlineNumber < 1 || airlineNumber > airlines.length) {
+      alert("Please enter a valid airline number (1-6).");
+    }
+  } while (isNaN(airlineNumber) || airlineNumber < 1 || airlineNumber > airlines.length);
+  
+  let airlineName = airlines[airlineNumber - 1];
+  
+  alert("You selected " + airlineName + ".");
+}
+
+function addAirline() {
+  let airlineName = prompt("Enter the name of the airline:");
+  
+  if (airlineName === null || airlineName.trim() === "") {
+    return; // User clicked cancel or entered empty string
+  }
+  
+  airlines.push(airlineName);
+  
+  alert("Added " + airlineName + " to the list of airlines.");
+}
+
+function removeAirline() {
+  let airlineNumber;
+  
+  do {
+    airlineNumber = prompt("Enter airline number to remove (1-6):");
+    
+    if (airlineNumber === null) {
+      return; // User clicked cancel
+    }
+    
+    airlineNumber = parseInt(airlineNumber);
+    
+    if (isNaN(airlineNumber) || airlineNumber < 1 || airlineNumber > airlines.length) {
+      alert("Please enter a valid airline number (1-6).");
+    }
+  } while (isNaN(airlineNumber) || airlineNumber < 1 || airlineNumber > airlines.length);
+  
+  let airlineName = airlines[airlineNumber - 1];
+  
+  airlines.splice(airlineNumber - 1, 1);
+  
+  alert("Removed " + airlineName + " from the list of airlines.");
+}
+	</script>
 		</body>
 </html>
