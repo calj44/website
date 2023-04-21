@@ -2,11 +2,10 @@ header {background-color: mintcream; color: navy; font-family: "arial","sans-ser
     border:solid; border-color: navy}
 nav {background-color:navy;
  		display: grid;
-		grid-template-columns: repeat(7, 1fr);
+		grid-template-columns: repeat(7,1fr);
         color: #fff;
         padding: 1rem;}
 nav a {
-        color: #fff;
         text-decoration: none;
         font-size: 1.2rem;
         padding: 0.5rem;
@@ -14,7 +13,7 @@ nav a {
       }
 
      nav a:hover {
-        background-color: #444;
+		 color: red;
       }
 nav p{border:medium solid; border-color:mintcream; background-color: navy; font-weight: bold; color: mintcream; display:inline-block; width: 17%; min-width: 85px; text-align:center; margin-left: 3px}
 nav a{color: mintcream}
